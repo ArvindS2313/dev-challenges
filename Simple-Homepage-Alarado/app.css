@@ -170,16 +170,45 @@ h1 {
   gap: 15px;
 }
 
+/* Dark mode styles */
+.dark {
+  color: white;
+}
+
+nav a.dark {
+  color: white;
+}
+
+.perks.dark {
+  color: #F2F9FE;
+}
+
+a.dark:hover {
+  color: cyan;
+}
+
+.bg-black {
+  background-color: #111729;
+}
+
+.links.bg-black {
+  background-color: #223344;
+}
+
 @media screen and (min-width: 840px) {
   nav a.icon {
     display: none;
   }
 
   nav .links {
-    background-color: whitesmoke;
+    background-color: inherit;
     display: flex;
     gap: 35px;
     align-items: center;
+  }
+  
+  nav .links.bg-black {
+    background-color: inherit;
   }
 
   nav a, nav img {
