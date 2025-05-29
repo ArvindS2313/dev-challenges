@@ -1,0 +1,149 @@
+/* CSS Reset Styles */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: url("resources/bg-guess-the-word.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+.card {
+    border: 1px solid blue;
+    background-color: #030616;
+    color: #F2F5F9;
+    border-radius: 10px;
+    padding: 2rem 1.75rem;
+
+    width: 85%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    background: linear-gradient(90deg, #7429C6, #C951E7);
+    background-clip: text;
+      -webkit-text-fill-color: transparent;
+    margin-bottom: 1.25rem;
+}
+
+.scrambled {
+    background-color: #4A5567;
+    border-radius: 5px;
+    padding: 1rem;
+
+    font-size: 2rem;
+    word-spacing: 0.75rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.num-tries {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+
+.num-tries > div {
+    display: flex;
+    gap: 6px;
+}
+
+.try {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+.left {
+    background-color: #7429C6;
+}
+
+.used {
+    background-color: #4A5567;
+}
+
+.guessed-letters {
+    margin: 2.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.letter {
+    font-size: 1.5rem;
+    border: 2px solid #4A5567;
+    border-radius: 7px;
+    padding: 0.5rem 1rem;
+    min-width: 50px;
+    min-height: 50px;
+    text-align: center;
+}
+
+.focus {
+    border-color: #7429C6;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    background-color: #C951E7;
+    color: inherit;
+    font-family: inherit;
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+}
+
+.disabled {
+    opacity: 0.7;
+}
+
+.result-modal {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.15s ease-in;
+
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    width: 60%;
+    max-width: 330px;
+
+    padding: 1.25rem;
+}
+
+.status-header {
+    font-size: 1.75rem;
+}
+
+.status-body {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.present {
+    opacity: 1;
+}
