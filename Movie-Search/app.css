@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    overflow-y: auto;
+    font-family: 'Outfit', sans-serif;
+    background-color: #131628;
+    color: white;
+}
+
+.warning {
+    text-align: center;
+}
+
+.hero {
+    background-image: url("Resources/hero-image-movie-search.png");
+    background-size: cover;
+    background-position: center;
+    height: 30%;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.image {
+    margin: 4rem 0;
+}
+
+.search {
+    background-color: #37455b;
+    width: 95%;
+    max-width: 600px;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    padding: 1.25rem;
+
+    position: absolute;
+    transform: translateY(50%); 
+}
+
+input {
+    font-family: inherit;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    flex-grow: 1;
+    font-size: 1.25rem;
+    color: white;
+}
+
+input::placeholder {
+    color: #7e8aa0;
+}
+
+main {
+    margin: 4.5rem auto;
+    padding: 1.6rem;
+    width: 93%;
+    max-width: 1000px;
+
+    border-radius: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-border {
+    border: 2px solid lightgrey;
+}
+
+.poster {
+    display: flex;
+    justify-content: center
+}
+
+.poster img {
+    border-radius: 10px;
+}
+
+.content h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin: 0.75rem 0;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 1rem;
+}
+
+.icon {
+    background-color: #37425c;
+    border-radius: 9999px;
+    padding: 0.25rem 0.75rem;
+}
+
+.description {
+    font-size: 1.125rem;
+    color: #a7b6dc;
+    margin-bottom: 1.5rem;
+}
+
+.attributes {
+    margin-bottom: 0.5rem;
+}
+
+.lbl, #num-ratings {
+    color: #a7b6dc;
+}
+
+#num-ratings {
+    font-size: 0.75rem;
+}
+
+@media screen and (min-width: 1040px) {
+    main {
+        flex-direction: row;
+        gap: 2rem;
+        margin: 6rem auto;
+    }
+
+    .poster {
+        align-items: center;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="image">
+        <img src="Resources/OMDb-logo.svg" alt="OMDB logo" />
+      </div>
+      <div class="search">
+        <img src="Resources/Search_alt.svg" alt="search icon" />
+        <input type="text" id="input" placeholder="Search movie" required />
+      </div>
+    </div>
+    <main>
+      <div class="poster">
+        <!-- <img
+          src="https://m.media-amazon.com/images/M/MV5BYmFmNmUyMjYtZTFjNS00OWQyLThhZmMtMGZkYTQ3YjY0ZDQ1XkEyXkFqcGc@._V1_SX300.jpg"
+          width="200"
+          height="300"
+          alt=""
+        /> -->
+      </div>
+      <div class="content">
+        <h1>
+          <!-- Movie Title -->
+        </h1>
+        <div class="icons">
+          <!-- <div class="icon">Action</div>
+          <div class="icon">Romance</div>
+          <div class="icon">Comedy</div> -->
+        </div>
+        <div class="description">
+          <!-- <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
+            ducimus quisquam ipsa tempora minus fugit! Dolorem sunt debitis
+            consectetur nemo similique esse maiores! Atque natus facere dolores
+            numquam? Omnis, dolores! Totam numquam quas, modi at delectus
+          </p> -->
+        </div>
+        <div class="attributes" id="directors">
+          <!-- <p><span class="lbl">Director:</span> Kai Russo</p> -->
+        </div>
+        <div class="attributes" id="writers">
+          <!-- <p><span class="lbl">Writers:</span> Jayson DeFeo Young</p> -->
+        </div>
+        <div class="attributes" id="stars">
+          <!-- <p><span class="lbl">Stars:</span> Arvind Shyam</p> -->
+        </div>
+        <div class="attributes" id="rating">
+          <!-- <p>
+            <span class="lbl">IMDb Rating:</span> 6.1/10
+            <span id="num-ratings">(420,000)</span>
+          </p> -->
+        </div>
+      </div>
+    </main>
+    <div class="warning">
+      <h1></h1>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
